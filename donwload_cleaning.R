@@ -38,3 +38,4 @@ ipca <- ipca %>% filter(mes != "MÊS") %>%
                doze_meses = as.numeric(doze_meses))
 
 #Pick month and year for reference
+
