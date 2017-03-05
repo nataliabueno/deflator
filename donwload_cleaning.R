@@ -38,4 +38,8 @@ ipca <- ipca %>% filter(mes != "MÊS") %>%
                doze_meses = as.numeric(doze_meses))
 
 #Pick month and year for reference
+#For exampe, January 2017
+
+ipca <- ipca %>% mutate(deflator = numero_indice/(ipca$numero_indice[nrow(ipca)]))
+                                                   
 
